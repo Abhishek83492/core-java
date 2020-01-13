@@ -1,0 +1,12 @@
+class Test1
+{
+        static Integer i = 10;
+        static Integer j= i;
+     public static void main(String[] args)
+     {
+           i++;
+       System.out.println(i);
+       System.out.println(j);
+       System.out.println(i==j);     
+}
+}

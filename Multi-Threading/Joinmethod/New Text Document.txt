@@ -1,0 +1,43 @@
+class Joinmethod extends Thread 
+{
+       public void run()
+       {
+              for(int i=0;i<=10;i++)
+              {
+                   System.out.println("child method");
+                    try{
+                                Thread.sleep(2000);
+                         }
+                    catch(InterruptedException c)
+                    {
+                         }
+                                           
+              }
+       }
+}
+/*class Yieldmethod2 extends Thread
+{
+       public void run()
+       {
+              for(int i=0;i<=10;i++)
+              {
+                   System.out.println("child second method");
+                  
+              }
+       }
+}*/
+class Yieldtest
+{
+      public static void main(String[] args)
+      {
+           Joinmethod y = new Joinmethod();
+           y.start();
+           y.join();
+     //      Yieldmethod2 y2 = new Yieldmethod2();
+     //      y2.start();
+           for(int i =0;i<=10;i++)
+           {
+                   System.out.println("main method");
+           }
+      }
+}     

@@ -1,0 +1,27 @@
+import java.io.*;
+class Rat implements Serializable
+{
+     int i=10;
+     int j=20;
+}
+class White implements Serializable
+{
+     int i=20;
+     int j=60;
+}
+class Elect implements Serializable
+{
+      int i=50;
+      int j=6;
+}
+class Serializationdemo1
+{
+   public static void main(String[] args)
+   {
+        File f = new File("hh.sed");
+        FileOutputStream fos = new FileOutputStream(f);
+        ObjectOutputStream oos = new ObjectOutputStream(fos);
+        oos.writeObject(fos);
+        System.out.println("data inserted to the file");
+   }
+}

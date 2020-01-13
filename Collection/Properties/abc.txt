@@ -1,0 +1,6 @@
+#Updated by Abhishek gupta
+#Fri Aug 16 13:06:51 NPT 2019
+user=Abhishek
+Add=71
+captha=GghJ
+pass=9999
